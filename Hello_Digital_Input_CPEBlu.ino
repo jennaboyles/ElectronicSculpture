@@ -1,0 +1,25 @@
+///////////////////////////////////////////////////////////////////////////////
+// Circuit Playground Digital In - Hello Digital
+//
+// Author: Carter Nelson
+// MIT License (https://opensource.org/licenses/MIT)
+
+#include <Adafruit_CircuitPlayground.h>
+
+///////////////////////////////////////////////////////////////////////////////
+void setup() {
+  Serial.begin(115200);
+  
+  CircuitPlayground.begin();
+  
+  pinMode(A2, INPUT);
+}
+
+///////////////////////////////////////////////////////////////////////////////
+void loop() {
+  int reading = digitalRead(A2);
+  
+  Serial.println(reading);
+  
+  delay(500);
+}
