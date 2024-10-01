@@ -7,6 +7,8 @@
 Adafruit_CPlay_NeoPixel strip = Adafruit_CPlay_NeoPixel(NUM_PIXELS, NEOPIX_PIN, NEO_GRB + NEO_KHZ800);
 
 void setup() {
+  // initialize the Circuit Playground as usual
+  // this will initialize the onboard NeoPixels as well
   CircuitPlayground.begin();
 
   // initialize external NeoPixel strip separately
