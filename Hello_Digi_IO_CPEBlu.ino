@@ -13,7 +13,7 @@ void setup() {
   CircuitPlayground.begin();
   
   pinMode(A2, INPUT);
-  pinMode(A3, OUTPUT ;
+  pinMode(A3, OUTPUT);
 }
 
 ///////////////////////////////////////////////////////////////////////////////
