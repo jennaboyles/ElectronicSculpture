@@ -1,3 +1,5 @@
+//using capacitive touch input value to change the brightness of external neopixels on circuit playground express
+
 #include <Adafruit_CircuitPlayground.h>
 // do NOT include the standard NeoPixel library
 
