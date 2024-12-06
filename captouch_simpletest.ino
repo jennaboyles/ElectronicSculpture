@@ -1,3 +1,6 @@
+// simple test for turning on external neopixels attached to a circuit playground express using one capactive touch input
+
+
 #include <Adafruit_CircuitPlayground.h>
 // do NOT include the standard NeoPixel library
 
@@ -26,7 +29,7 @@ void loop() {
   CircuitPlayground.clearPixels();
   strip.clear();
 
- if (CircuitPlayground.readCap(A4) < CAP_THRESHOLD) {
+ if (CircuitPlayground.readCap(2) < CAP_THRESHOLD) {
   
   CircuitPlayground.setPixelColor(1, 255,   0,   0); // set color at onboard neopixel for testing to Red
 
